@@ -6,3 +6,31 @@ body {
 a {
   color: #00B7FF;
 }
+
+.navbar {
+
+  text-align: center;
+
+}
+
+.navegador {
+
+  display: inline-block;
+  background: black;
+  color: white;
+  padding: 10px 30px;
+  text-decoration: none;
+  
+
+}
+
+.navegador:hover {
+
+  background:grey
+
+}
+
+#form {
+  text-align: center;
+  padding: 20px 40px;
+}
