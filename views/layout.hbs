@@ -13,11 +13,13 @@
 
     <div class="navbar">
     <nav>
-        <a href="/" class="navegador">Home</a>
-        <a href="/login" class="navegador">Log in</a>
-        <a href="/" class="navegador">Log Out</a>
-        <a href="/signup" class="navegador">Sign Up</a>
-        <a href="/profile" class="navegador">Profile</a>
+        {{#if userInSession}}
+          <a href="/logout" class="navegador">Logout</a>
+          {{else}}
+          <a href="/profile" class="navegador">Check Middleware</a>
+          <a href="/login" class="navegador">Login</a> 
+          <a href="/signup" class="navegador">Signup</a>
+          {{/if}}
     </nav>
     </div>
 
